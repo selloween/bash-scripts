@@ -1,3 +1,4 @@
+#!/bin/sh
 echo "###### Installing dependencies ######"
 sudo yum install -y yum-utils \
   device-mapper-persistent-data \
@@ -19,4 +20,3 @@ sudo groupadd docker
 
 echo "Adding ${USER} to Docker Group"
 sudo usermod -aG docker $USER
-
